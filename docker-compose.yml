@@ -1,0 +1,24 @@
+services:
+
+  athena:
+    image: joaojacques/athena-0.1
+    container_name: my-athena
+    environment:
+      - SQL_CONNECTION=${SQL_CONNECTION}
+      - SQL_USER=${SQL_USER}
+      - SQL_PASSWORD=${SQL_PASSWORD}
+      - SQL_HOST=${SQL_HOST}
+      - SQL_PORT=${SQL_PORT}
+      - SQL_DATABASE=${SQL_DATABASE}
+
+      - MONGO_CONNECTION=${MONGO_CONNECTION}
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+      - MONGO_HOST=${MONGO_HOST}
+      - MONGO_PORT=${MONGO_PORT}
+
+      - QUOTE_INFORMATION_DB=${QUOTE_INFORMATION_DB}
+      - QUOTE_INFORMATION_COLLECTION=${QUOTE_INFORMATION_COLLECTION}
+
+      - WEIGHT_DB=${WEIGHT_DB}
+      - WEIGHT_COLLECTION=${WEIGHT_COLLECTION}
