@@ -11,7 +11,7 @@ numpy = "^1.22.1"
 pandas = "^1.3.5"
 yfinance = "^0.1.69"
 pyportfolioopt = "^1.5.1"
-pandas-datareader = "^0.10.0"
+QuantStats = "^0.0.58"
 
 [tool.poetry.dev-dependencies]
 ipykernel = "^6.7.0"
