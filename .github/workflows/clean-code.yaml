@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Format code with black
+        run: |
+          pip install black black[jupyter]
+          black .
 
       - name: Remove unused imports with autoflake
         run: |
@@ -20,11 +24,6 @@ jobs:
         run: |
           pip install isort
           isort .
-
-      - name: Format code with black
-        run: |
-          pip install black
-          black .
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
