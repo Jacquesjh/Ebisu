@@ -1,4 +1,6 @@
 import yaml
 import os
 
-print("okokoko")
+
+def main():
+    print("okokoko")
