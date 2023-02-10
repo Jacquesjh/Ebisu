@@ -2,8 +2,9 @@ name: Clean Code
 
 on:
   push:
-    branches-ignore:
-      - main
+    branches:
+      - "**" # matches every branch
+      - "!master" # excludes master
 
 jobs:
   format:
