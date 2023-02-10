@@ -46,7 +46,8 @@ class Pipeline:
     def _constrained_weights(
         self, optimizer_function: Callable, parameters: dict
     ) -> pd.DataFrame:
-        from athena.src.services.constrainer.constrainer import constrained_weights
+        from athena.src.services.constrainer.constrainer import \
+            constrained_weights
 
         weights = constrained_weights(
             raw_df=self.raw_data,

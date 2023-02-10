@@ -1,3 +1,2 @@
-import yaml
 
 print("test")
