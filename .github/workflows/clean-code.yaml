@@ -1,4 +1,4 @@
-name: Format code
+name: Clean Code
 
 on:
   push:
@@ -11,15 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Sort imports with isort
-        run: |
-          pip install isort
-          isort .
-
       - name: Remove unused imports with autoflake
         run: |
           pip install autoflake
           autoflake --in-place --remove-all-unused-imports --remove-unused-variables --recursive .
+
+      - name: Sort imports with isort
+        run: |
+          pip install isort
+          isort .
 
       - name: Format code with black
         run: |
