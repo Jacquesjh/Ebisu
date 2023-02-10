@@ -1,3 +1,3 @@
 import yaml
 
-print("test"
+print("test")
