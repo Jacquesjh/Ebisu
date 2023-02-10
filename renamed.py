@@ -1,5 +1,2 @@
-
-
-
 def main():
     print("okokoko")
