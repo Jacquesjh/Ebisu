@@ -12,9 +12,16 @@ import plotly.graph_objects as go
 import yfinance as yf
 from athena.src.services.backtest.backtest import Backtest
 from athena.src.services.dashboard.configs import (
-    DOMAINS_AVAILABLE, FILTERS_AVAILABLE, FILTERS_SECUNDARY_OPTIONS,
-    OPTIMIZERS_AVAILABLE, OPTIMIZERS_SECUNDARY_OPTIONS, RULES_AVAILABLE,
-    RULES_SECUNDARY_OPTIONS, SECTORS_AVAILABLE, TICKERS_AVAILABLE)
+    DOMAINS_AVAILABLE,
+    FILTERS_AVAILABLE,
+    FILTERS_SECUNDARY_OPTIONS,
+    OPTIMIZERS_AVAILABLE,
+    OPTIMIZERS_SECUNDARY_OPTIONS,
+    RULES_AVAILABLE,
+    RULES_SECUNDARY_OPTIONS,
+    SECTORS_AVAILABLE,
+    TICKERS_AVAILABLE,
+)
 from dash import MATCH, Dash, Input, Output, State, dcc, html
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.LUX])
